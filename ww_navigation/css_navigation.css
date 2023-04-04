@@ -1,0 +1,68 @@
+.main-nav {
+    background: #4f77a2;
+    /* position: fixed; Ensure that this is fixed without the background hero image moving around*/ 
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+  }
+  
+  nav ul{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    height: 8vh
+  }
+  
+  nav ul li {
+    padding: 15px 20px;
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    font-size: 14pt;
+    text-transform: capitalize;
+    font-family: 'Arial', 'Arial Narrow';
+    color: white
+  }
+  
+  nav ul li:hover {
+    background-color: #132f4d;
+    transition: 0.3s;
+    color:white;
+  }
+  
+  .active{
+  background-color: #132f4d; /*make fill the full width, similar to how it looks when hovered*/
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-underline-offset: 10px;
+  color: white;
+  }
+
+  @media only screen and (max-width: 428px) {
+    .main-nav {
+      position: relative;
+    }
+    
+    nav ul{
+      display: flex;
+      height: 207px;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  @media only screen and (min-width: 428px) and (max-width: 767px) {
+    .main-nav {
+      position: relative;
+    } 
+
+    nav ul{
+      display: flex;
+      height: 207px;
+      flex-direction: column;
+      text-align: center;
+    }
+
+  }
+  
