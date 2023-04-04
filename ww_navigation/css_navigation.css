@@ -2,7 +2,7 @@
     background: #4f77a2;
     /* position: fixed; Ensure that this is fixed without the background hero image moving around*/ 
     width: 100vw;
-    position: fixed;
+    position: static;
     z-index: 2;
   }
   
